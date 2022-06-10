@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatic park</title>
+  <style>
+    body {padding: 0;margin: 0;background-color:#000033;font-family:Arial;color:white;}
+    canvas {border: 5px solid white;margin:auto;display:block;} 
+    h1 {color: black; background-color: blueviolet; text-align: center;}
+    .park{
+        float: right;
+    }
+    p {
+        font-family: verdana;
+    }
+  </style>
+</head>
+
+<body>
+	<h1>Short way for transfering file between two laptop</h1>
+    <center>
+        <p>For transfering 50Mo of data. 
+         Laptops need get the duration on seconds of the label of transfer cable.
+        </p>
+    </center>
+    
+    <table>
+        <tr>
+            <td id="td_f">
+                <form action="#" method="POST" id="form1">
+                    <fieldset>
+                        <legend>CHOICE OF MACHINE TO TRANSFER DATA</legend>
+                        <table>
+                            <tr>
+                                <td><label for="tb_des">SOURCE</label></td>
+                                <td>
+                                    <select id="src">
+                                      <optgroup label="Machines">
+                                        <option value="0">MACHINE 0</option>
+                                        <option value="1">MACHINE 1</option>
+                                        <option value="2">MACHINE 2</option>
+                                        <option value="3">MACHINE 3</option>
+                                        <option value="4">MACHINE 4</option>
+                                      </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                              <tr>
+                                  <td><label for="tb_des">RECEPTOR</label></td>
+                                  <td>
+                                      <select id="rcp">
+                                        <optgroup  label="Machines">
+                                          <option value="0">MACHINE 0</option>
+                                          <option value="1">MACHINE 1</option>
+                                          <option value="2">MACHINE 2</option>
+                                          <option value="3">MACHINE 3</option>
+                                          <option value="4">MACHINE 4</option>
+                                        </optgroup>
+                                      </select>
+                                  </td>
+                              </tr> 
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Lancer"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                <fieldset>
+                    <legend>The path</legend>
+                    <input type="text" disabled id="output">
+                </fieldset>
+            </td>
+
+            <td id="td_i">
+                <img src="parc.info.jpg">
+            </td>
+        </tr>
+    </table>
+    
+    <script src="scriptpcc.js"></script>
+
+</body>
+
+</html>
